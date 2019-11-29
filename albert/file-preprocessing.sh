@@ -28,7 +28,7 @@ do
     for f in $( find ${DIR} -name "wiki_*" )
     do
         cat ${f} | \
-        normaliz\punctuation.perl -l pt | \
-        tokenizer.perl -l pt >> ${DIR}/all.txt
+        ./normalize-punctuation.perl -l pt | \
+        ./tokenizer.perl -l pt >> ${DIR}/all.txt
     done
 done
