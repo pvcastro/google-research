@@ -6,7 +6,7 @@ import os
 import sentencepiece as sp
 
 CURDIR = os.path.dirname(os.path.abspath(__file__))
-CONFIGPATH = os.path.join(CURDIR, os.pardir, 'config.ini')
+CONFIGPATH = os.path.join(CURDIR, 'config.ini')
 config = configparser.ConfigParser()
 config.read(CONFIGPATH)
 
