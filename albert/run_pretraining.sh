@@ -16,7 +16,7 @@ MAX_SEQ_LEN=512
 TRAIN_BATCH_SIZE=4096
 
 python -m albert.run_pretraining \
-   --albert_config_file "${CURDIR}/albert_config.json"
+   --albert_config_file "${CURDIR}/albert_config.json" \
    --input_dir ${TEXTDIR} \
    --output_dir ${CHECKPOINTDIR} \
    --export_dir ${MODELDIR} \
