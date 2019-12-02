@@ -1,4 +1,4 @@
-!/usr/bin/env bash
+#!/usr/bin/env bash
 
 # Read data_text_dir path from a config file.
 CURDIR=$(cd $(dirname $0); pwd)
@@ -15,7 +15,7 @@ echo ${CHECKPOINTDIR}
 MAX_SEQ_LEN=512
 TRAIN_BATCH_SIZE=4096
 
-python run_pretraining.py \
+python -m albert.run_pretraining \
    --input_dir ${TEXTDIR} \
    --output_dir ${CHECKPOINTDIR} \
    --export_dir ${MODELDIR} \
